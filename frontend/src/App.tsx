@@ -11,15 +11,17 @@ import { Route, Routes, BrowserRouter } from 'react-router-dom';
 // import browserHistory from 'browserHistory';
 
 // -- external pages --
-import Homes from 'pages/Homes';
+import Attendances from 'pages/Attendances';
+import BpDocument from 'components/organisms/BpDocument';
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route index element={<Homes />} />
-        {/* <Route index element={<PrivateRoute component={<Homes />} />} /> */}
-        {/* <Route
+      <BpDocument>
+        <Routes>
+          <Route index element={<Attendances />} />
+          {/* <Route index element={<PrivateRoute component={<Homes />} />} /> */}
+          {/* <Route
                     path="/hase"
                     element={<PrivateRoute component={<Hase />} />}
                 />
@@ -27,7 +29,8 @@ const App = () => {
                     path="/dataset"
                     element={<PrivateRoute component={<Dataset />} />}
                 /> */}
-      </Routes>
+        </Routes>
+      </BpDocument>
     </BrowserRouter>
   );
 };

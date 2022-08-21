@@ -10,11 +10,14 @@ export const colors = {
   yellow: 'yellow',
   light_green: 'rgba(206,238,154,1)',
   // named color codes
-  background_color: '#f5f5f5',
+  background_color: '#FFFFFF',
   // purposed color codes
   main_font_color: '#6a6a6a',
   component_main_color: 'rgba(57, 131, 141, 1)',
   disabled_background_color: 'rgba(204, 204, 204, 1)',
+  component_small_border_color: '#919191',
+  table_hover_background_color: 'rgba(0, 0, 0, 0.04)',
+  table_checked_background_color: 'rgba(0, 136, 145, 0.3)',
 };
 
 export default colors;
